@@ -25,11 +25,19 @@ function renderFurniture(furniture) {
     categoryEl.classList.add('furniture-category');
     priceEl.classList.add('furniture-price');
     buttonEl.classList.add('add-button');
-
+    
     divEl.append(descriptionEl, categoryEl, priceEl, buttonEl);
     liEl.append(h3El, imgEl, divEl);
+    
+    buttonPress(buttonEl);
 
     return liEl;
+}
+
+function buttonPress(newButton) {
+    newButton.addEventListener('click', () => {
+        alert(`The ${newButton.value} was added.`);
+    });
 }
 
 export default renderFurniture;
