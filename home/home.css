@@ -1,0 +1,19 @@
+/* add home page styles here */
+
+#enter-here {
+    position: relative;
+    bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    color: teal;
+    font-weight: bold;
+}
+
+.main-section {
+    font-size: 4em;
+    height: 100%;
+    width: auto;
+}
