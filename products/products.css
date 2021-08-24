@@ -3,16 +3,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
 }
+
 .products-container li {
     justify-content: right;
     list-style-type: none;
     margin: 10px;
     border: 1px black solid;
     padding: 5px;
-
-
 }
 
 .description-container {
@@ -21,7 +19,6 @@
     align-items: flex-end;
     font-weight: bold; 
 }
-
 
 li img {
     width: 20em;

@@ -44,7 +44,7 @@ const table = {
     price: '600.00'
 };
 
-const furniture = [
+export const furniture = [
     armoire,
     bed,
     desk,
@@ -52,4 +52,3 @@ const furniture = [
     table
 ];
 
-export default furniture;
