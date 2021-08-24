@@ -9,7 +9,6 @@ thead {
     color: white;
     background-color: teal;
     border: none;
-    rules: none;
 }
 
 td {
@@ -31,7 +30,7 @@ tfoot {
     top: 7em;
 }
 
-#total-price, #total-quantity {
+#total-price {
     font-weight: bold;
 }
 

@@ -1,5 +1,6 @@
 import { findById } from '../utils/find-by-id.js';
 import { calcItemTotal } from '../utils/calc-item-total.js';
+import { calcOrderTotal } from '../utils/calc-order-total.js';
 import { cartItems } from '../data/cart-items.js';
 import { furniture } from '../data/furniture.js';
 
@@ -26,6 +27,15 @@ test('calcItemTotal should take in a product price and a quantity and return the
     const expected = 5000;
 
     const actual = calcItemTotal(furniture[1].price, cartItems[1].quantity);
+
+    expect.equal(actual, expected);
+});
+
+test('calcOrderTotal should take in the product array and the cart arry and return the total order cost', (expect) => {
+
+    const expected = 11908.78;
+
+    const actual = calcOrderTotal(furniture, cartItems);
 
     expect.equal(actual, expected);
 });
