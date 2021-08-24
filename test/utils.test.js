@@ -1,10 +1,11 @@
 import { findById } from '../utils/find-by-id.js';
+import { calcItemTotal } from '../utils/calc-item-total.js';
 import { cartItems } from '../data/cart-items.js';
 import { furniture } from '../data/furniture.js';
 
 const test = QUnit.test;
 
-test('FindById should take in the list of all products and the item to match and return the requested product', (expect) => {
+test('findById should take in the list of all products and the item to match and return the requested product', (expect) => {
 
     const expected = {
         category: 'Bedroom', 
@@ -18,4 +19,13 @@ test('FindById should take in the list of all products and the item to match and
     const actual = findById(furniture, cartItems[1]);
 
     expect.deepEqual(actual, expected);
+});
+
+test('calcItemTotal should take in a product price and a quantity and return the total cost', (expect) => {
+
+    const expected = 5000;
+
+    const actual = calcItemTotal(furniture[1].price, cartItems[1].quantity);
+
+    expect.equal(actual, expected);
 });
