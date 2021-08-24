@@ -1,5 +1,5 @@
 
-export const cart = [
+export const cartItems = [
     { id: 'armoire', quantity: 2 },
     { id: 'bed', quantity: 1 },
     { id: 'desk', quantity: 3 },
