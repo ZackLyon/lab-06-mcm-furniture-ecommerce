@@ -8,7 +8,6 @@ export function renderLineItems(productInfo, cartInfo){
     const tdTotal = document.createElement('td');
 
     const total = calcItemTotal(productInfo.price, cartInfo.quantity);
-    
 
     tdName.textContent = productInfo.name;
     tdPrice.textContent = `$${productInfo.price}`;
