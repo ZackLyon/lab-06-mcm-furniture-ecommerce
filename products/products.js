@@ -1,6 +1,6 @@
 import { furniture } from '../data/furniture.js';
 import { renderFurniture } from './render-furniture.js';
-import newButton from './new-button.js';
+import { newButton } from './new-button.js';
 
 const ulEl = document.querySelector('.products-container');
 

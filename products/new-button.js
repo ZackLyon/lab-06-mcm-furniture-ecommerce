@@ -1,6 +1,6 @@
-function newButton(furniture) {
+export function newButton(furniture) {
     const buttonEl = document.createElement('button');
-    
+
     buttonEl.textContent = 'Add';
     buttonEl.value = furniture.id;
     buttonEl.classList.add('add-button');
@@ -12,4 +12,3 @@ function newButton(furniture) {
     return buttonEl;
 }
 
-export default newButton;

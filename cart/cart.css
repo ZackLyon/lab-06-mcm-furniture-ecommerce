@@ -1,0 +1,46 @@
+
+th, td {
+    padding: 10px;
+    width: 8em;
+    font-size: 1.3em;
+}
+
+thead {
+    color: white;
+    background-color: teal;
+    border: none;
+    rules: none;
+}
+
+td {
+    text-align: center;
+}
+
+tfoot {
+    background-color: rgb(148, 194, 194);
+}
+
+#table-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 7em;
+}
+
+#total-price, #total-quantity {
+    font-weight: bold;
+}
+
+#checkout-btn {
+    position: relative;
+    top: 2em;
+    width: 8em;
+    height: 2em;
+    font-size: 1.3em;
+    color: white;
+    background-color: teal;
+}
