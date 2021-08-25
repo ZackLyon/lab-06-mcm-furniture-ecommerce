@@ -5,7 +5,7 @@ const armoire = {
     image: 'armoire.jpeg',
     description: 'A useful armoire for storing clothes',
     category: 'Storage',
-    price: '700.00'
+    price: '700.73'
 };
 
 const bed = {
@@ -23,7 +23,7 @@ const desk = {
     image: 'desk.jpeg',
     description: 'An inspiring desk to work on new projects.',
     category: 'Office',
-    price: '500.00'
+    price: '500.99'
 };
 
 const recliner = {
@@ -32,7 +32,7 @@ const recliner = {
     image: 'recliner.jpeg',
     description: 'A comfy recliner for relaxing with a book.',
     category: 'Seating',
-    price: '800.00'
+    price: '800.87'
 };
 
 const table = {
@@ -41,7 +41,7 @@ const table = {
     image: 'table.jpeg',
     description: 'A table to gather at during dinnertime.',
     category: 'Dining',
-    price: '600.00'
+    price: '600.32'
 };
 
 export const furniture = [
