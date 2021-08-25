@@ -1,6 +1,5 @@
 import { findById } from '../utils/find-by-id.js';
 import { calcOrderTotal } from '../utils/calc-order-total.js';
-// import { cartItems } from '../data/cart-items.js';
 import { furniture } from '../data/furniture.js';
 import { renderLineItems } from './render-line-items.js';
 import { getCart, clearCart } from '../utils/cart-api.js';

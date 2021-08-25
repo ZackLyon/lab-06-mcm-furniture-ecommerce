@@ -8,11 +8,8 @@ export function newButton(furniture) {
     buttonEl.classList.add('add-button');
 
     buttonEl.addEventListener('click', () => {
-        // alert(`The ${buttonEl.value} was added.`);
-        console.log(buttonEl.value);
         addItemToCart(buttonEl.value);
     });
 
     return buttonEl;
 }
-

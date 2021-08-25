@@ -36,7 +36,9 @@ function addItemToCart(idForAddedItem){
 }
 
 function clearCart(){
-    alert(JSON.stringify(getCart()), true, 2); //get cart and make string
+    alert(JSON.stringify(getCart(), true, 2)); //alert user of items in cart by making cart a string
 
-    
+    localStorage.removeItem(CART);
+
+    window.location.href = '../index.html';
 }
