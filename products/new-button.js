@@ -1,3 +1,5 @@
+import { addItemToCart } from '../utils/cart-api.js';
+
 export function newButton(furniture) {
     const buttonEl = document.createElement('button');
 
@@ -6,7 +8,9 @@ export function newButton(furniture) {
     buttonEl.classList.add('add-button');
 
     buttonEl.addEventListener('click', () => {
-        alert(`The ${buttonEl.value} was added.`);
+        // alert(`The ${buttonEl.value} was added.`);
+        console.log(buttonEl.value);
+        addItemToCart(buttonEl.value);
     });
 
     return buttonEl;

@@ -1,8 +1,6 @@
 /* add home page styles here */
 
 #enter-here {
-    position: relative;
-    bottom: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,6 +8,16 @@
     width: auto;
     color: teal;
     font-weight: bold;
+}
+
+#enter-here > a {
+    position: relative;
+    bottom: 2em;
+    cursor: pointer;
+    text-decoration: none;
+    color: teal;
+    border: 10px black dotted;
+    padding: 20px;
 }
 
 .main-section {

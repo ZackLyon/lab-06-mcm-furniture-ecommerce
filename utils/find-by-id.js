@@ -1,7 +1,7 @@
 
-export function findById(allProducts, itemToMatch){
+export function findById(allProducts, id){
     for (let item of allProducts) {
-        if (item.id === itemToMatch.id) {
+        if (item.id === id) {
             return item;
         }
     }
