@@ -6,7 +6,7 @@ import { furniture } from '../data/furniture.js';
 
 const test = QUnit.test;
 
-test('findById should take in the list of all products and the item to match and return the requested product', (expect) => {
+test('findById should take in the list of all products and the id to match and return the requested product', (expect) => {
 
     const expected = {
         category: 'Bedroom', 
@@ -17,7 +17,7 @@ test('findById should take in the list of all products and the item to match and
         price: '1000.00'
     };
 
-    const actual = findById(furniture, cartItems[1]);
+    const actual = findById(furniture, cartItems[1].id);
 
     expect.deepEqual(actual, expected);
 });

@@ -6,7 +6,7 @@ export function renderLineItems(productInfo, cartInfo){
     const tdPrice = document.createElement('td');
     const tdQuantity = document.createElement('td');
     const tdTotal = document.createElement('td');
-
+    
     const total = calcItemTotal(productInfo.price, cartInfo.quantity);
 
     tdName.textContent = productInfo.name;
@@ -23,5 +23,3 @@ export function renderLineItems(productInfo, cartInfo){
 
     return trEl;
 }
-
-
